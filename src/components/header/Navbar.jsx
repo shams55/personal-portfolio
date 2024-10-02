@@ -5,7 +5,7 @@ export default function NavBar(){
     return(
         <div>
             <h1>Hello</h1>
-
+            <h3>hi</h3>
         </div>
     )
 }

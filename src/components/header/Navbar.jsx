@@ -1,26 +1,28 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import logoImg from "../../images/logo.png"
+import { Link } from "react-router-dom";
+import LinkItem from "./NavMenu";
 
 
 export default function NavBar(){
     return(
-        <div>
+        <header className="header-area">
             <div className="xl:container xl:mx-auto">
                 <div className="row">
-                    <div className="flex justify-between">
-                        <div className="flex-1 w-30">
-                          <img src={logoImg} alt="Logo" />
+                <div className="lg:col-span-12">
+                    <div className="flex lg:justify-center lg:items-center relative header-style">
+                        <div className="logo-brand">
+                            <Link to="/Home"><img src={logoImg} alt="Logo" /></Link>
                         </div>
-                        <div className="flex-1 w-40">
-                            <h1>Hello</h1>
-                        </div>
-                        <div className="flex-1 w-30">
-                            <h1>Hello</h1>
+                        <LinkItem />
+                        <div className="button ms-3">
+                            <a className="jones-btn" href="#contact-section"><span>Hire me</span></a>
                         </div>
                     </div>
                 </div>
+                </div>
             </div>
-        </div>
+        </header>
     )
 }

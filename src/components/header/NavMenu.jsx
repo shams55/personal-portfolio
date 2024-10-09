@@ -1,37 +1,35 @@
-// import React from "react"
-// import { Link } from "react-router-dom"
+import React from "react"
+import { Link } from "react-router-dom"
 
 
 
 
-// export default function NavMenu(){
+export default function LinkItem(){
 
-//     const link = [
-//         { name: "Services"},
-//         { name: "Work"},
-//         { name: "Skills"},
-//         { name: "Review"},
-//         { name: "Contact"}
-//     ]
+    const menuItems = [
+        { id: 1, name: "Services", path: "/", class: "services"},
+        { id: 2, name: "Work", path: "/", class: "work"},
+        { id: 3, name: "Skills", path: "/", class: "skills"},
+        { id: 4, name: "Review", path: "/", class: "review"},
+        { id: 5, name: "Contact", path: "/", class: "Contact"}
+    ]
     
-//     return(
-//         <div>
-//             <div className="customNav">
-//                 <div className="container">
-//                     <div className="row">
-//                         <div className="grid xl:grid-cols-12">
-//                             <ul>
-//                                {link.map((link) =>(
-//                                     <li>
-//                                         <Link>{link.name}</Link>
-//                                     </li>
-//                                ))}
-//                             </ul>
-//                         </div>
-//                     </div>
-//                 </div>
-//             </div>
-//         </div>
-//     )
-// }
+    return(
+        
+                        
+        <div class="rectangle-fill w-full">
+            <ul className="text-right">
+                {menuItems.map((menuItems, index) =>(
+                <li key={menuItems.id}>
+                        <Link to={menuItems.path} className="triangle" data-class={menuItems.class}>
+                            {menuItems.name}
+                        </Link>
+                    </li>
+                ))}
+            </ul>
+        </div>
+                       
+                   
+    )
+}
 

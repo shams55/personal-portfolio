@@ -215,6 +215,21 @@ input:focus {
   border-radius: 100%;
 }
 
+/* navigation */
+.rectangle-fill ul li{
+  display: inline-block;
+}
+.rectangle-fill ul li a{
+    color: rgb(34, 34, 34);
+    font-weight: 500;
+    font-size: 16px;
+    padding: 30px 18px;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+
+
 /* Animation */
 @keyframes spinner {
   0% {

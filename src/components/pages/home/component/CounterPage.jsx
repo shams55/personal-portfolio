@@ -31,6 +31,9 @@ export default function CounterPage(){
                             <div class="verticl-line"></div>
                         </div>
                     </div>
+                    <div class="col-lg-12">
+                        <div class="sb-bottom pt-2"></div>
+                    </div>
                 </div>
             </div>
         </div>

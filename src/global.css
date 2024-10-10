@@ -129,7 +129,17 @@ input:focus {
   font-size: 120px;
   font-weight: 600;
   margin-bottom: 0px;
+  line-height: 120px;
 }
+.contact-section,
+.blog-section,
+.client-review,
+.skills-area,
+.work-area,
+.services-area {
+  padding-top: 75px;
+}
+
 
 @keyframes rotate-animation {
   0% {
@@ -1035,11 +1045,11 @@ input:focus {
   margin-top: 40px;
 }
 
-/* .contact-info {
+.contact-info {
   padding: 172px 70px;
-  background-image: url("../images/contact.png");
+  background-image: url("./images/contact.png");
   border-radius: 24px;
-} */
+}
 .contact-info .social-share a {
   border: 1px solid #fff !important;
   margin-right: 10px;

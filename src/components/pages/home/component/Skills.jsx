@@ -31,7 +31,9 @@ export default function Skills(){
                 <div class="flex flex-wrap">
                     <div class="w-full md:w-1/5 lg:w-1/5 xl:w-1/5">
                         <div class="skill-logo text-center wow fadeInUp" data-wow-delay=".4s">
-                            <img src={skillImg} alt="Skills img" />
+                            <div className="flex justify-center">
+                                <img src={skillImg} alt="Skills img" />
+                            </div>
                             <div class="skill-content">
                                 <span>Illustrator</span>
                             </div>
@@ -39,7 +41,9 @@ export default function Skills(){
                     </div>
                     <div class="w-full md:w-1/5 lg:w-1/5 xl:w-1/5">
                         <div class="skill-logo text-center wow fadeInUp" data-wow-delay=".4s">
-                            <img src={skillImg2} alt="Skills img" />
+                            <div className="flex justify-center">
+                                <img src={skillImg2} alt="Skills img" />
+                            </div>
                             <div class="skill-content">
                                 <span>Premiere Pro</span>
                             </div>
@@ -47,7 +51,9 @@ export default function Skills(){
                     </div>
                     <div class="w-full md:w-1/5 lg:w-1/5 xl:w-1/5">
                         <div class="skill-logo text-center wow fadeInUp" data-wow-delay=".4s">
-                            <img src={skillImg3} alt="Skills img" />
+                            <div className="flex justify-center">
+                                <img src={skillImg3} alt="Skills img" />
+                            </div>
                             <div class="skill-content">
                                 <span>Photoshop</span>
                             </div>
@@ -55,7 +61,9 @@ export default function Skills(){
                     </div>
                     <div class="w-full md:w-1/5 lg:w-1/5 xl:w-1/5">
                         <div class="skill-logo text-center wow fadeInUp" data-wow-delay=".4s">
-                            <img src={skillImg4} alt="Skills img" />
+                            <div className="flex justify-center">
+                                <img src={skillImg4} alt="Skills img" />
+                            </div>
                             <div class="skill-content">
                                 <span>Adobe XD</span>
                             </div>
@@ -63,7 +71,9 @@ export default function Skills(){
                     </div>
                     <div class="w-full md:w-1/5 lg:w-1/5 xl:w-1/5">
                         <div class="skill-logo text-center wow fadeInUp" data-wow-delay=".4s">
-                            <img src={skillImg5} alt="Skills img" />
+                            <div className="flex justify-center">
+                                <img src={skillImg5} alt="Skills img" />
+                            </div>
                             <div class="skill-content">
                                 <span>Figma</span>
                             </div>
@@ -71,7 +81,9 @@ export default function Skills(){
                     </div>
                     <div class="w-full md:w-1/5 lg:w-1/5 xl:w-1/5">
                         <div class="skill-logo text-center wow fadeInUp" data-wow-delay=".4s">
-                            <img src={skillImg6} alt="Skills img" />
+                            <div className="flex justify-center">
+                                <img src={skillImg6} alt="Skills img" />
+                            </div>
                             <div class="skill-content">
                                 <span>Miro</span>
                             </div>
@@ -79,7 +91,9 @@ export default function Skills(){
                     </div>
                     <div class="w-full md:w-1/5 lg:w-1/5 xl:w-1/5">
                         <div class="skill-logo text-center wow fadeInUp" data-wow-delay=".4s">
-                            <img src={skillImg7} alt="Skills img" />
+                            <div className="flex justify-center">
+                                <img src={skillImg7} alt="Skills img" />
+                            </div>
                             <div class="skill-content">
                                 <span>Webflow</span>
                             </div>
@@ -87,15 +101,19 @@ export default function Skills(){
                     </div>
                     <div class="w-full md:w-1/5 lg:w-1/5 xl:w-1/5">
                         <div class="skill-logo text-center wow fadeInUp" data-wow-delay=".4s">
-                            <img src={skillImg8} alt="Skills img" />
+                            <div className="flex justify-center">
+                                <img src={skillImg8} alt="Skills img" />
+                            </div>
                             <div class="skill-content">
                                 <span>Filmora</span>
                             </div>
                         </div>
                     </div>
                     <div class="w-full md:w-1/5 lg:w-1/5 xl:w-1/5">
-                        <div class="skill-logo text-center wow fadeInUp" data-wow-delay=".4s">
-                            <img src={skillImg9} alt="Skills img" />
+                        <div class="skill-logo justtify-center wow fadeInUp" data-wow-delay=".4s">
+                            <div className="flex justify-center">
+                                <img src={skillImg9} alt="Skills img" />
+                            </div>
                             <div class="skill-content">
                                 <span>After Effect</span>
                             </div>
@@ -103,14 +121,18 @@ export default function Skills(){
                     </div>
                     <div class="w-full md:w-1/5 lg:w-1/5 xl:w-1/5">
                         <div class="skill-logo text-center wow fadeInUp" data-wow-delay=".4s">
-                            <img src={skillImg10} alt="Skills img" />
+                            <div className="flex justify-center">
+                                <img src={skillImg10} alt="Skills img" />
+                            </div>
                             <div class="skill-content">
                                 <span>Sketch</span>
                             </div>
                         </div>
                     </div>
-                    <div class="button text-center wow fadeInUp" data-wow-delay=".4s">
-                        <a class="jones-btn" href="#"><span>Hire me</span></a>
+                    <div className="flex justify-center w-full">
+                        <div class="button wow fadeInUpr" data-wow-delay=".4s">
+                            <a class="jones-btn" href="#"><span>Hire me</span></a>
+                        </div>
                     </div>
                     <div class="col-lg-12">
                         <div class="sb-bottom"></div>

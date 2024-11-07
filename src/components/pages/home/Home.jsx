@@ -6,6 +6,7 @@ import Contact from "./component/Contact";
 import Blog from "./component/Blog";
 import ClientReview from "./component/ClientReview";
 import Skills from "./component/Skills";
+import LatestWork from "./component/LatestWork";
 
 
 
@@ -18,6 +19,7 @@ const Home = () =>{
             <HeroSection/>
             <CounterPage/>
             <ServiceList/>
+            <LatestWork/>
             <Skills/>
             <ClientReview/>
             <Blog />

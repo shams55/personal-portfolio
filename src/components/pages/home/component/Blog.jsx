@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Heading from "../../../common/Heading";
 import blogImg from "../../../../images/blog/1.png";
 import blogImg2 from "../../../../images/blog/2.png";
@@ -45,16 +46,16 @@ export default function Blog(){
                     <div className="blog-wrapper-post wow fadeInUp" data-wow-delay=".4s">
                         <div className="blog-post ">
                             <div className="img-content position-relative">
-                                <a href="blog-details.html">
+                                <Link to="/BlogDetails">
                                     <img className="img-fluid radius-24" src={blogImg2} alt="Blog Images" />
-                                </a>
+                                </Link>
                                 <div className="blog-meta">
                                     <span>03 Jan, 2024</span>
                                 </div>
                             </div>
                             <div className="blog-title">
                                 <span className="circle">Technology</span>
-                                <h4><a href="blog-details.html">Is Ai better than Human? or this is just a think?</a></h4>
+                                <h4><Link to="/BlogDetails">Is Ai better than Human? or this is just a think?</Link></h4>
                             </div>
                         </div>
                     </div>
@@ -63,16 +64,16 @@ export default function Blog(){
                     <div className="blog-wrapper-post wow fadeInUp" data-wow-delay=".6s">
                         <div className="blog-post">
                             <div className="img-content position-relative">
-                                <a href="blog-details.html">
+                                <Link to="/BlogDetails">
                                     <img className="img-fluid radius-24" src={blogImg3} alt="Blog Images" />
-                                </a>
+                                </Link>
                                 <div className="blog-meta">
                                     <span>19 Feb, 2024</span>
                                 </div>
                             </div>
                             <div className="blog-title">
                                 <span className="circle">Music</span>
-                                <h4><a href="blog-details.html">Musical Productionis getting higher</a></h4>
+                                <h4><Link to="/BlogDetails">Musical Productionis getting higher</Link></h4>
                             </div>
                         </div>
                     </div>
@@ -81,14 +82,14 @@ export default function Blog(){
                     <div className="blog-wrapper-post wow fadeInUp" data-wow-delay=".8s">
                         <div className="blog-post">
                             <div className="img-content position-relative">
-                                <a href="blog-details.html"><img className="img-fluid radius-24" src={blogImg4} alt="Blog Images" /></a>
+                                <Link to="/BlogDetails"><img className="img-fluid radius-24" src={blogImg4} alt="Blog Images" /></Link>
                                 <div className="blog-meta">
                                     <span>14 Mar, 2024</span>
                                 </div>
                             </div>
                             <div className="blog-title">
                                 <span className="circle">Photography</span>
-                                <h4><a href="blog-details.html">Exposure over contrast?</a></h4>
+                                <h4><Link to="/BlogDetails">Exposure over contrast?</Link></h4>
                             </div>
                         </div>
                     </div>

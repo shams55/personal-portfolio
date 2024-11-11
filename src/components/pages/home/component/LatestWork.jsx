@@ -1,7 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
 
@@ -20,41 +20,52 @@ const head = [
     }
   ];
 
+  
 export default function LatestWork(){
     var settings = {
-    dots: false,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 4,
-    initialSlide: 0,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  };
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        
+      };
+//     var settings = {
+//     dots: false,
+//     infinite: false,
+//     speed: 500,
+//     slidesToShow: 4,
+//     slidesToScroll: 4,
+//     initialSlide: 0,
+//     responsive: [
+//       {
+//         breakpoint: 1024,
+//         settings: {
+//           slidesToShow: 3,
+//           slidesToScroll: 3,
+//           infinite: true,
+//           dots: true
+//         }
+//       },
+//       {
+//         breakpoint: 600,
+//         settings: {
+//           slidesToShow: 2,
+//           slidesToScroll: 2,
+//           initialSlide: 2
+//         }
+//       },
+//       {
+//         breakpoint: 480,
+//         settings: {
+//           slidesToShow: 1,
+//           slidesToScroll: 1
+//         }
+//       }
+//     ]
+//   };
+
+
     return(
         <div className="work-area" id="work-area">
         <div className="xl:container xl:mx-auto">
@@ -77,64 +88,61 @@ export default function LatestWork(){
             </div>
         </div>
         <div className="xl:container xl:mx-auto">
-            <div className="flex flex-wrap">
-                
-                <div className="work-list  grid grid-cols-5 grid-rows-1 gap-4">
-                    <div className="slider-container">
-                        <Slider {...settings}>
-                            <div className="mix filter-all filter-graphics filter-uiux filter-design ">
-                                <div className="portfolio-content wow fadeInUp" data-wow-delay=".4s">
-                                    <div className="portfolio-content-image position-relative">
-                                        <img className="img-fluid radius-24" src={workImg} alt="Portfolio Images"/>
-                                        <div className="portfolio-inner-content">
-                                            <h4><a href="portfolio.html">UI/UX <svg className="right-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" d="M16 5c0 .742.733 1.85 1.475 2.78c.954 1.2 2.094 2.247 3.401 3.046C21.856 11.425 23.044 12 24 12m0 0c-.956 0-2.145.575-3.124 1.174c-1.307.8-2.447 1.847-3.401 3.045C16.733 17.15 16 18.26 16 19m8-7H0"></path></svg></a></h4>
-                                        </div>
-                                    </div>
+            <div className="slider-container">
+                <Slider {...settings}>
+                   
+                    {/* {data.map((item, index)=>(
+                            <div key={index} class="portfolio-content-image position-relative">
+                                <img src={item.img} alt=""/>
+                                <div class="portfolio-inner-content">
+                                    <h4><a href="portfolio.html">{item.name}</a></h4>
                                 </div>
                             </div>
-                            <div className="mix filter-all filter-uiux filter-design filter-graphics mt-md-5 filter-brand">
-                                <div className="portfolio-content wow fadeInUp" data-wow-delay=".6s">
-                                    <div className="portfolio-content-image position-relative">
-                                    <img className="img-fluid radius-24" src={workImg2} alt="Portfolio Images"/>
-                                        <div className="portfolio-inner-content">
-                                            <h4><a href="portfolio.html">Design <svg className="right-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" d="M16 5c0 .742.733 1.85 1.475 2.78c.954 1.2 2.094 2.247 3.401 3.046C21.856 11.425 23.044 12 24 12m0 0c-.956 0-2.145.575-3.124 1.174c-1.307.8-2.447 1.847-3.401 3.045C16.733 17.15 16 18.26 16 19m8-7H0"></path></svg></a></h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="mix filter-all filter-brand filter-design">
-                                <div className="portfolio-content wow fadeInUp" data-wow-delay=".4s">
-                                    <div className="portfolio-content-image position-relative">
-                                    <img className="img-fluid radius-24" src={workImg3} alt="Portfolio Images"/>
-                                        <div className="portfolio-inner-content">
-                                            <h4><a href="portfolio.html">Branding <svg className="right-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" d="M16 5c0 .742.733 1.85 1.475 2.78c.954 1.2 2.094 2.247 3.401 3.046C21.856 11.425 23.044 12 24 12m0 0c-.956 0-2.145.575-3.124 1.174c-1.307.8-2.447 1.847-3.401 3.045C16.733 17.15 16 18.26 16 19m8-7H0"></path></svg></a></h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className=" mix filter-all filter-uiux filter-brand mt-md-5">
-                                <div className="portfolio-content wow fadeInUp" data-wow-delay=".6s">
-                                    <div className="portfolio-content-image position-relative">
-                                    <img className="img-fluid radius-24" src={workImg4} alt="Portfolio Images"/>
-                                        <div className="portfolio-inner-content">
-                                            <h4><a href="portfolio.html">Graphics <svg className="right-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" d="M16 5c0 .742.733 1.85 1.475 2.78c.954 1.2 2.094 2.247 3.401 3.046C21.856 11.425 23.044 12 24 12m0 0c-.956 0-2.145.575-3.124 1.174c-1.307.8-2.447 1.847-3.401 3.045C16.733 17.15 16 18.26 16 19m8-7H0"></path></svg></a></h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className=" mix filter-all filter-uiux filter-design filter-graphics">
-                                <div className="portfolio-content wow fadeInUp" data-wow-delay=".4s">
-                                    <div className="portfolio-content-image position-relative">
-                                    <img className="img-fluid radius-24" src={workImg5} alt="Portfolio Images"/>
-                                        <div className="portfolio-inner-content">
-                                            <h4><a href="portfolio.html">Marketing <svg className="right-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" d="M16 5c0 .742.733 1.85 1.475 2.78c.954 1.2 2.094 2.247 3.401 3.046C21.856 11.425 23.044 12 24 12m0 0c-.956 0-2.145.575-3.124 1.174c-1.307.8-2.447 1.847-3.401 3.045C16.733 17.15 16 18.26 16 19m8-7H0"></path></svg></a></h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </Slider>
+                        ))
+                    } */}
+                   
+                <div class="portfolio-content">
+                    <div class="portfolio-content-image relative">
+                        <img class="img-fluid radius-24" src={workImg} alt="Portfolio Images"/>
+                        <div class="portfolio-inner-content">
+                            <h4><Link to="/portfolio">UI/UX <svg class="right-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" d="M16 5c0 .742.733 1.85 1.475 2.78c.954 1.2 2.094 2.247 3.401 3.046C21.856 11.425 23.044 12 24 12m0 0c-.956 0-2.145.575-3.124 1.174c-1.307.8-2.447 1.847-3.401 3.045C16.733 17.15 16 18.26 16 19m8-7H0"></path></svg></Link></h4>
+                        </div>
                     </div>
                 </div>
+                <div class="portfolio-content wow fadeInUp" data-wow-delay=".6s">
+                    <div class="portfolio-content-image relative">
+                        <img class="img-fluid radius-24" src={workImg2} alt="Portfolio Images"/>
+                        <div class="portfolio-inner-content">
+                        <h4><Link to="/portfolio">Design <svg class="right-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" d="M16 5c0 .742.733 1.85 1.475 2.78c.954 1.2 2.094 2.247 3.401 3.046C21.856 11.425 23.044 12 24 12m0 0c-.956 0-2.145.575-3.124 1.174c-1.307.8-2.447 1.847-3.401 3.045C16.733 17.15 16 18.26 16 19m8-7H0"></path></svg></Link></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-content wow fadeInUp" data-wow-delay=".6s">
+                    <div class="portfolio-content-image relative">
+                        <img class="img-fluid radius-24" src={workImg3} alt="Portfolio Images"/>
+                        <div class="portfolio-inner-content">
+                            <h4><a href="portfolio.html">Branding <svg class="right-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" d="M16 5c0 .742.733 1.85 1.475 2.78c.954 1.2 2.094 2.247 3.401 3.046C21.856 11.425 23.044 12 24 12m0 0c-.956 0-2.145.575-3.124 1.174c-1.307.8-2.447 1.847-3.401 3.045C16.733 17.15 16 18.26 16 19m8-7H0"></path></svg></a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-content wow fadeInUp" data-wow-delay=".6s">
+                    <div class="portfolio-content-image relative">
+                        <img class="img-fluid radius-24" src={workImg4} alt="Portfolio Images"/>
+                        <div class="portfolio-inner-content">
+                            <h4><a href="portfolio.html">Graphics <svg class="right-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" d="M16 5c0 .742.733 1.85 1.475 2.78c.954 1.2 2.094 2.247 3.401 3.046C21.856 11.425 23.044 12 24 12m0 0c-.956 0-2.145.575-3.124 1.174c-1.307.8-2.447 1.847-3.401 3.045C16.733 17.15 16 18.26 16 19m8-7H0"></path></svg></a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-content wow fadeInUp" data-wow-delay=".6s">
+                    <div class="portfolio-content-image relative">
+                        <img class="img-fluid radius-24" src={workImg5} alt="Portfolio Images"/>
+                        <div class="portfolio-inner-content">
+                            <h4><a href="portfolio.html">Marketing <svg class="right-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" d="M16 5c0 .742.733 1.85 1.475 2.78c.954 1.2 2.094 2.247 3.401 3.046C21.856 11.425 23.044 12 24 12m0 0c-.956 0-2.145.575-3.124 1.174c-1.307.8-2.447 1.847-3.401 3.045C16.733 17.15 16 18.26 16 19m8-7H0"></path></svg></a></h4>
+                        </div>
+                    </div>
+                </div>
+                    
+                </Slider>
             </div>
         </div>
         <div className="xl:container xl:mx-auto">
@@ -154,3 +162,76 @@ export default function LatestWork(){
     </div>
     )
 }
+
+// const data = [
+//     {
+//         name: "UI/UX",
+//         img: "../../../../images/work/1.png",
+//         icon: {
+//             type: "svg",
+//             className: "right-arrow",
+//             viewBox: "0 0 24 24",
+//             path: {
+//                 fill: "none",
+//                 stroke: "currentColor",
+//                 d: "M16 5c0 .742.733 1.85 1.475 2.78c.954 1.2 2.094 2.247 3.401 3.046C21.856 11.425 23.044 12 24 12m0 0c-.956 0-2.145.575-3.124 1.174c-1.307.8-2.447 1.847-3.401 3.045C16.733 17.15 16 18.26 16 19m8-7H0"
+//             }
+//         }
+//     },
+//     {
+//         name: "Design",
+//         img: "/images/work/2.jpg",
+//         icon: {
+//             type: "svg",
+//             className: "right-arrow",
+//             viewBox: "0 0 24 24",
+//             path: {
+//                 fill: "none",
+//                 stroke: "currentColor",
+//                 d: "M16 5c0 .742.733 1.85 1.475 2.78c.954 1.2 2.094 2.247 3.401 3.046C21.856 11.425 23.044 12 24 12m0 0c-.956 0-2.145.575-3.124 1.174c-1.307.8-2.447 1.847-3.401 3.045C16.733 17.15 16 18.26 16 19m8-7H0"
+//             }
+//         }
+//     },
+//     {
+//         name: "Branding",
+//         img: "/images/work/3.jpg",
+//         icon: {
+//             type: "svg",
+//             className: "right-arrow",
+//             viewBox: "0 0 24 24",
+//             path: {
+//                 fill: "none",
+//                 stroke: "currentColor",
+//                 d: "M16 5c0 .742.733 1.85 1.475 2.78c.954 1.2 2.094 2.247 3.401 3.046C21.856 11.425 23.044 12 24 12m0 0c-.956 0-2.145.575-3.124 1.174c-1.307.8-2.447 1.847-3.401 3.045C16.733 17.15 16 18.26 16 19m8-7H0"
+//             }
+//         }
+//     },
+//     {
+//         name: "Graphics",
+//         img: "/images/work/4.jpg",
+//         icon: {
+//             type: "svg",
+//             className: "right-arrow",
+//             viewBox: "0 0 24 24",
+//             path: {
+//                 fill: "none",
+//                 stroke: "currentColor",
+//                 d: "M16 5c0 .742.733 1.85 1.475 2.78c.954 1.2 2.094 2.247 3.401 3.046C21.856 11.425 23.044 12 24 12m0 0c-.956 0-2.145.575-3.124 1.174c-1.307.8-2.447 1.847-3.401 3.045C16.733 17.15 16 18.26 16 19m8-7H0"
+//             }
+//         }
+//     },
+//     {
+//         name: "Marketing",
+//         img: "/images/work/5.jpg",
+//         icon: {
+//             type: "svg",
+//             className: "right-arrow",
+//             viewBox: "0 0 24 24",
+//             path: {
+//                 fill: "none",
+//                 stroke: "currentColor",
+//                 d: "M16 5c0 .742.733 1.85 1.475 2.78c.954 1.2 2.094 2.247 3.401 3.046C21.856 11.425 23.044 12 24 12m0 0c-.956 0-2.145.575-3.124 1.174c-1.307.8-2.447 1.847-3.401 3.045C16.733 17.15 16 18.26 16 19m8-7H0"
+//             }
+//         }
+//     }
+// ];

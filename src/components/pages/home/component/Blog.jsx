@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Heading from "../../../common/Heading";
 import blogImg from "../../../../images/blog/1.png";
@@ -15,6 +15,7 @@ const head = [
   ];
 
 export default function Blog(){
+
     return(
     <div className="blog-section" id="blog-section">
         <div className="xl:container xl:mx-auto">
@@ -45,7 +46,7 @@ export default function Blog(){
                 <div className="w-full md:w-1/2 lg:w-1/3 xl:w-1/3">
                     <div className="blog-wrapper-post wow fadeInUp" data-wow-delay=".4s">
                         <div className="blog-post ">
-                            <div className="img-content position-relative">
+                            <div className="img-content relative">
                                 <Link to="/BlogDetails">
                                     <img className="img-fluid radius-24" src={blogImg2} alt="Blog Images" />
                                 </Link>
@@ -63,7 +64,7 @@ export default function Blog(){
                 <div className="w-full md:w-1/2 lg:w-1/3 xl:w-1/3">
                     <div className="blog-wrapper-post wow fadeInUp" data-wow-delay=".6s">
                         <div className="blog-post">
-                            <div className="img-content position-relative">
+                            <div className="img-content relative">
                                 <Link to="/BlogDetails">
                                     <img className="img-fluid radius-24" src={blogImg3} alt="Blog Images" />
                                 </Link>
@@ -81,8 +82,8 @@ export default function Blog(){
                 <div className="w-full md:w-1/2 lg:w-1/3 xl:w-1/3">
                     <div className="blog-wrapper-post wow fadeInUp" data-wow-delay=".8s">
                         <div className="blog-post">
-                            <div className="img-content position-relative">
-                                <Link to="/BlogDetails"><img className="img-fluid radius-24" src={blogImg4} alt="Blog Images" /></Link>
+                            <div className="img-content relative">
+                                <Link to="/BlogDetails"><img className="img-fluid " src={blogImg4} alt="Blog Images" /></Link>
                                 <div className="blog-meta">
                                     <span>14 Mar, 2024</span>
                                 </div>
